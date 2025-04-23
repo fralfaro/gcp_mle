@@ -10,24 +10,26 @@
         <meta name="author" content="Francisco Alfaro">
       
       
-        <link rel="canonical" href="https://github.com/fralfaro/gcp_mle/unit6/">
+        <link rel="canonical" href="https://github.com/fralfaro/gcp_mle/unit1/best-practices/">
+      
+      
+        <link rel="prev" href="../service-accounts/">
       
       
       
-      
-      <link rel="icon" href="../images/icon.png">
+      <link rel="icon" href="../../images/icon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.25">
     
     
       
-        <title>🔥 Fundamentos de PySpark - Machine Learning GCP</title>
+        <title>Buenas Prácticas - Machine Learning GCP</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../css/neoteroi-mkdocs.css">
+      <link rel="stylesheet" href="../../css/neoteroi-mkdocs.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fundamentos-de-pyspark" class="md-skip">
+        <a href="#buenas-practicas" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -88,9 +90,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href=".." title="Machine Learning GCP" class="md-header__button md-logo" aria-label="Machine Learning GCP" data-md-component="logo">
+    <a href="../.." title="Machine Learning GCP" class="md-header__button md-logo" aria-label="Machine Learning GCP" data-md-component="logo">
       
-  <img src="../images/gcp.png" alt="logo">
+  <img src="../../images/gcp.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -107,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🔥 Fundamentos de PySpark
+              Buenas Prácticas
             
           </span>
         </div>
@@ -218,7 +220,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -234,11 +236,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../unit1/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -273,9 +277,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Machine Learning GCP" class="md-nav__button md-logo" aria-label="Machine Learning GCP" data-md-component="logo">
+    <a href="../.." title="Machine Learning GCP" class="md-nav__button md-logo" aria-label="Machine Learning GCP" data-md-component="logo">
       
-  <img src="../images/gcp.png" alt="logo">
+  <img src="../../images/gcp.png" alt="logo">
 
     </a>
     Machine Learning GCP
@@ -323,7 +327,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -355,6 +359,8 @@
       
   
   
+    
+  
   
   
     
@@ -375,19 +381,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit1/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -398,13 +407,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 1
@@ -420,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/intro/" class="md-nav__link">
+      <a href="../intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -441,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/roles/" class="md-nav__link">
+      <a href="../roles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -462,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/service-accounts/" class="md-nav__link">
+      <a href="../service-accounts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,10 +489,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../unit1/best-practices/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Buenas Prácticas
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -492,6 +521,149 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-son-importantes-las-buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué son importantes las buenas prácticas?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principales-recomendaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principales recomendaciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Principales recomendaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-aplica-el-principio-de-menor-privilegio" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 1. Aplica el principio de menor privilegio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-usa-cuentas-de-servicio-por-flujo-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      👥 2. Usa cuentas de servicio por flujo de trabajo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-prefiere-roles-predefinidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 3. Prefiere roles predefinidos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-administra-el-acceso-por-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 4. Administra el acceso por proyecto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-revisa-politicas-periodicamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 5. Revisa políticas periódicamente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-evita-la-dependencia-de-credenciales-locales" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 6. Evita la dependencia de credenciales locales
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herramientas-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herramientas útiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-de-implementacion-segura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checklist de implementación segura
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-adicionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos adicionales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -531,45 +703,123 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivos-de-la-unidad" class="md-nav__link">
+  <a href="#introduccion" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 Objetivos de la unidad
+      Introducción
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contenidos" class="md-nav__link">
+  <a href="#por-que-son-importantes-las-buenas-practicas" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Contenidos
+      ¿Por qué son importantes las buenas prácticas?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#recomendacion" class="md-nav__link">
+  <a href="#principales-recomendaciones" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 Recomendación
+      Principales recomendaciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Principales recomendaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-aplica-el-principio-de-menor-privilegio" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 1. Aplica el principio de menor privilegio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-usa-cuentas-de-servicio-por-flujo-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      👥 2. Usa cuentas de servicio por flujo de trabajo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-prefiere-roles-predefinidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 3. Prefiere roles predefinidos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-administra-el-acceso-por-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 4. Administra el acceso por proyecto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-revisa-politicas-periodicamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 5. Revisa políticas periódicamente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-evita-la-dependencia-de-credenciales-locales" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 6. Evita la dependencia de credenciales locales
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herramientas-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herramientas útiles
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerrequisitos" class="md-nav__link">
+  <a href="#checklist-de-implementacion-segura" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Prerrequisitos
+      Checklist de implementación segura
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#que-lograras-al-finalizar-esta-unidad" class="md-nav__link">
+  <a href="#recursos-adicionales" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ ¿Qué lograrás al finalizar esta unidad?
+      Recursos adicionales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
     </span>
   </a>
   
@@ -590,72 +840,113 @@
                   
 
 
-<h1 id="fundamentos-de-pyspark">🔥 Fundamentos de PySpark</h1>
-<p>La Unidad 1 te introduce al mundo del procesamiento distribuido con <strong>Apache Spark</strong> usando Python. Aquí aprenderás a manejar grandes volúmenes de datos de manera eficiente, utilizando transformaciones, acciones y consultas SQL sobre estructuras distribuidas. Esta unidad es clave para trabajar con Big Data de forma escalable y profesional.</p>
+<h1 id="buenas-practicas">Buenas Prácticas</h1>
+<p><img src="../images/best.webp" alt="Service Accounts Banner" width="400"></p>
+<h2 id="introduccion">Introducción</h2>
+<p>Aplicar buenas prácticas en IAM es fundamental para construir soluciones <strong>seguras, mantenibles y auditables</strong> en Google Cloud, especialmente cuando se trabaja con datos sensibles o se automatizan flujos de Machine Learning.</p>
+<p>En este capítulo aprenderás principios y recomendaciones clave para mejorar la seguridad y la gobernanza de accesos.</p>
 <hr />
-<h2 id="objetivos-de-la-unidad">🎯 Objetivos de la unidad</h2>
+<h2 id="por-que-son-importantes-las-buenas-practicas">¿Por qué son importantes las buenas prácticas?</h2>
+<p>IAM mal configurado puede abrir puertas a:</p>
 <ul>
-<li>Comprender el modelo de ejecución distribuido de Spark.</li>
-<li>Crear y transformar estructuras de datos distribuidas (RDD y DataFrame).</li>
-<li>Ejecutar operaciones con <code>transformations</code> y <code>actions</code>.</li>
-<li>Consultar datos usando Spark SQL.</li>
-<li>Comprender el flujo de trabajo de un job de Spark.</li>
-<li>Integrar Spark en entornos locales o en la nube.</li>
+<li>🛑 Pérdida de datos por accesos indebidos.</li>
+<li>🚨 Vulnerabilidades en pipelines automatizados.</li>
+<li>🤯 Dificultad para auditar quién hizo qué y cuándo.</li>
+<li>🧩 Problemas de escalabilidad y colaboración en equipos grandes.</li>
+</ul>
+<p>Aplicar buenas prácticas ayuda a prevenir estos riesgos desde el inicio del proyecto.</p>
+<hr />
+<h2 id="principales-recomendaciones">Principales recomendaciones</h2>
+<h3 id="1-aplica-el-principio-de-menor-privilegio">🔒 1. Aplica el principio de menor privilegio</h3>
+<ul>
+<li>Otorga <strong>solo los permisos necesarios</strong> para realizar una tarea.</li>
+<li>Revisa y elimina roles innecesarios o excesivos.</li>
+<li>Evita el uso de <code>roles/owner</code>, <code>roles/editor</code> o <code>roles/viewer</code> en producción.</li>
 </ul>
 <hr />
-<h2 id="contenidos">📚 Contenidos</h2>
+<h3 id="2-usa-cuentas-de-servicio-por-flujo-de-trabajo">👥 2. Usa cuentas de servicio por flujo de trabajo</h3>
+<ul>
+<li>Crea una cuenta por pipeline, función o proceso automatizado.</li>
+<li>Asigna a cada cuenta <strong>solo los roles que necesita</strong>.</li>
+<li>Evita reutilizar cuentas en múltiples contextos.</li>
+</ul>
+<hr />
+<h3 id="3-prefiere-roles-predefinidos">🧱 3. Prefiere roles predefinidos</h3>
+<ul>
+<li>Usa roles como <code>roles/aiplatform.user</code>, <code>roles/storage.objectViewer</code>, etc.</li>
+<li>Solo crea roles personalizados si los predefinidos no satisfacen tu caso.</li>
+<li>Documenta cualquier rol personalizado que utilices.</li>
+</ul>
+<hr />
+<h3 id="4-administra-el-acceso-por-proyecto">📦 4. Administra el acceso por proyecto</h3>
+<ul>
+<li>Organiza tus proyectos por entorno (ej. <code>ml-dev</code>, <code>ml-prod</code>).</li>
+<li>Otorga roles a nivel de proyecto, no en recursos individuales si no es necesario.</li>
+<li>Usa etiquetas y carpetas para separar ambientes o líneas de negocio.</li>
+</ul>
+<hr />
+<h3 id="5-revisa-politicas-periodicamente">🧾 5. Revisa políticas periódicamente</h3>
+<ul>
+<li>Usa <code>gcloud projects get-iam-policy</code> para revisar accesos.</li>
+<li>Implementa auditorías trimestrales o automáticas.</li>
+<li>Usa herramientas como <strong>Policy Analyzer</strong> o <strong>IAM Recommender</strong>.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>projects<span class="w"> </span>get-iam-policy<span class="w"> </span>mi-proyecto-id
+</code></pre></div>
+<hr />
+<h3 id="6-evita-la-dependencia-de-credenciales-locales">🔁 6. Evita la dependencia de credenciales locales</h3>
+<ul>
+<li>Usa autenticación automática con cuentas de servicio en GKE, Cloud Run o Vertex.</li>
+<li>Si necesitas credenciales <code>.json</code>, <strong>usa secretos</strong> y no los incluyas en el repositorio.</li>
+</ul>
+<hr />
+<h2 id="herramientas-utiles">Herramientas útiles</h2>
 <table>
 <thead>
 <tr>
-<th>Tema</th>
-<th>Descripción breve</th>
+<th>Herramienta</th>
+<th>Uso principal</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>⚙️ <strong>Introducción a Spark y PySpark</strong></td>
-<td>Qué es Spark, cómo funciona y cómo lo usamos con Python.</td>
+<td>IAM Policy Analyzer</td>
+<td>Detecta roles innecesarios o riesgosos</td>
 </tr>
 <tr>
-<td>📦 <strong>RDD y DataFrames</strong></td>
-<td>Tipos de estructuras distribuidas, diferencias y casos de uso.</td>
+<td>IAM Recommender</td>
+<td>Sugerencias automáticas de permisos mínimos</td>
 </tr>
 <tr>
-<td>🔁 <strong>Transformaciones y Acciones</strong></td>
-<td>Cómo manipular y procesar los datos de forma eficiente.</td>
+<td>Audit Logs</td>
+<td>Revisión de acciones históricas</td>
 </tr>
 <tr>
-<td>🧠 <strong>Lazy Evaluation</strong></td>
-<td>Ejecución diferida y optimización automática del plan de ejecución.</td>
-</tr>
-<tr>
-<td>🔍 <strong>Spark SQL</strong></td>
-<td>Consultas tipo SQL sobre grandes conjuntos de datos.</td>
-</tr>
-<tr>
-<td>🧪 <strong>Spark Streaming (básico)</strong></td>
-<td>Introducción al procesamiento de datos en tiempo real.</td>
+<td>Cloud Asset Inventory</td>
+<td>Inventario completo de roles y recursos</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="recomendacion">🧠 Recomendación</h2>
-<p>Te sugerimos comenzar por la introducción conceptual y luego avanzar paso a paso por las transformaciones, SQL y finalmente streaming. Asegúrate de <strong>ejecutar los ejemplos tú mismo</strong> para entender cómo Spark distribuye las operaciones.</p>
-<hr />
-<h2 id="prerrequisitos">📚 Prerrequisitos</h2>
+<h2 id="checklist-de-implementacion-segura">Checklist de implementación segura</h2>
 <ul>
-<li>Conocimientos intermedios de Python</li>
-<li>Familiaridad con estructuras tipo <code>DataFrame</code></li>
-<li>Entorno configurado para ejecutar PySpark</li>
+<li>[ ] Cada cuenta de servicio tiene un propósito claro y documentado.</li>
+<li>[ ] No se usan roles amplios como <code>Editor</code> u <code>Owner</code> en producción.</li>
+<li>[ ] Todas las políticas están revisadas al menos una vez al trimestre.</li>
+<li>[ ] El acceso a recursos de ML (datasets, modelos) está auditado.</li>
+<li>[ ] Las claves de cuentas de servicio están protegidas y rotadas periódicamente.</li>
 </ul>
 <hr />
-<h2 id="que-lograras-al-finalizar-esta-unidad">✅ ¿Qué lograrás al finalizar esta unidad?</h2>
+<h2 id="recursos-adicionales">Recursos adicionales</h2>
 <ul>
-<li>Procesar grandes volúmenes de datos con PySpark.</li>
-<li>Utilizar transformaciones y acciones de forma eficiente.</li>
-<li>Consultar datos con Spark SQL.</li>
-<li>Comprender cómo funciona un motor de ejecución distribuido.</li>
-</ul><style type="text/css">.quiz {
+<li><a href="https://cloud.google.com/iam/docs/recommender-overview">IAM Recommender</a></li>
+<li><a href="https://cloud.google.com/iam/docs/troubleshooting-access">IAM Policy Troubleshooter</a></li>
+<li><a href="https://cloud.google.com/logging/docs/audit">Cloud Audit Logs</a></li>
+</ul>
+<hr />
+<h2 id="conclusion">Conclusión</h2>
+<p>Una buena configuración de IAM no solo mejora la seguridad, sino que también facilita la automatización, la colaboración y el monitoreo en tus flujos de Machine Learning.</p>
+<p>En la próxima unidad aprenderás cómo almacenar, consultar y preparar datos usando <strong>Cloud Storage y BigQuery</strong>.</p><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -793,6 +1084,28 @@ function resetFieldset(fieldset) {
         <footer class="md-footer">
   
     
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../service-accounts/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Cuentas de Servicio">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Cuentas de Servicio
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -886,12 +1199,12 @@ function resetFieldset(fieldset) {
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
