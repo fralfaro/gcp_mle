@@ -95,3 +95,5 @@ nav:
         - unit1/README.md
         - unit1/intro.md
         - unit1/roles.md
+        - unit1/service-accounts.md
+        - unit1/best-practices.md
