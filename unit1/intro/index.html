@@ -10,22 +10,28 @@
         <meta name="author" content="Francisco Alfaro">
       
       
+        <link rel="canonical" href="https://github.com/fralfaro/gcp_mle/unit1/intro/">
       
       
+        <link rel="prev" href="../">
       
-      <link rel="icon" href="/fralfaro/gcp_mle/images/icon.png">
+      
+        <link rel="next" href="../roles/">
+      
+      
+      <link rel="icon" href="../../images/icon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.25">
     
     
       
-        <title>Machine Learning GCP</title>
+        <title>Introducción a IAM - Machine Learning GCP</title>
       
     
     
-      <link rel="stylesheet" href="/fralfaro/gcp_mle/assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="/fralfaro/gcp_mle/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="/fralfaro/gcp_mle/css/neoteroi-mkdocs.css">
+      <link rel="stylesheet" href="../../css/neoteroi-mkdocs.css">
     
-    <script>__md_scope=new URL("/fralfaro/gcp_mle/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduccion-a-iam" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,9 +92,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="/fralfaro/gcp_mle/." title="Machine Learning GCP" class="md-header__button md-logo" aria-label="Machine Learning GCP" data-md-component="logo">
+    <a href="../.." title="Machine Learning GCP" class="md-header__button md-logo" aria-label="Machine Learning GCP" data-md-component="logo">
       
-  <img src="/fralfaro/gcp_mle/images/gcp.png" alt="logo">
+  <img src="../../images/gcp.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -100,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Introducción a IAM
             
           </span>
         </div>
@@ -211,7 +222,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/fralfaro/gcp_mle/." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -227,11 +238,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/fralfaro/gcp_mle/unit1/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -266,9 +279,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/fralfaro/gcp_mle/." title="Machine Learning GCP" class="md-nav__button md-logo" aria-label="Machine Learning GCP" data-md-component="logo">
+    <a href="../.." title="Machine Learning GCP" class="md-nav__button md-logo" aria-label="Machine Learning GCP" data-md-component="logo">
       
-  <img src="/fralfaro/gcp_mle/images/gcp.png" alt="logo">
+  <img src="../../images/gcp.png" alt="logo">
 
     </a>
     Machine Learning GCP
@@ -316,7 +329,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/fralfaro/gcp_mle/." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -348,6 +361,8 @@
       
   
   
+    
+  
   
   
     
@@ -364,19 +379,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/fralfaro/gcp_mle/unit1/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -387,13 +405,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 1
@@ -406,10 +424,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/fralfaro/gcp_mle/unit1/intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introducción a IAM
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -418,6 +456,149 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-es-importante-entender-iam" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué es importante entender IAM?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-principales-de-iam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes principales de IAM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Componentes principales de IAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-principals-identidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Principals (Identidades)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Permisos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-politicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Políticas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagrama-logico-de-iam-en-gcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagrama lógico de IAM en GCP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-practico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo práctico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iam-en-proyectos-de-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      IAM en proyectos de ML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recomendaciones-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recomendaciones clave
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias útiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -430,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fralfaro/gcp_mle/unit1/roles/" class="md-nav__link">
+      <a href="../roles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -468,6 +649,139 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-es-importante-entender-iam" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué es importante entender IAM?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-principales-de-iam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes principales de IAM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Componentes principales de IAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-principals-identidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Principals (Identidades)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Permisos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-politicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Políticas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagrama-logico-de-iam-en-gcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagrama lógico de IAM en GCP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-practico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo práctico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iam-en-proyectos-de-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      IAM en proyectos de ML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recomendaciones-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recomendaciones clave
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias útiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -479,8 +793,221 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="introduccion-a-iam">Introducción a IAM</h1>
+<p><img src="../images/intro.png" alt="Banner IAM" width="700"></p>
+<h2 id="introduccion">Introducción</h2>
+<p>El sistema <strong>Identity and Access Management (IAM)</strong> de Google Cloud permite definir <strong>quién puede hacer qué sobre qué recurso</strong>. En proyectos de Machine Learning, esto es esencial para proteger datos, controlar accesos a modelos y automatizar procesos de manera segura.</p>
+<p>En este capítulo, aprenderás los componentes principales de IAM, cómo aplicarlos y por qué es fundamental entender esta arquitectura para cualquier proyecto en la nube.</p>
+<hr />
+<h2 id="por-que-es-importante-entender-iam">¿Por qué es importante entender IAM?</h2>
+<p>Comprender cómo funciona IAM te permitirá:</p>
+<ul>
+<li>Prevenir accesos no autorizados a tus datos o modelos.</li>
+<li>Automatizar flujos de trabajo de manera segura con cuentas de servicio.</li>
+<li>Implementar el principio de menor privilegio y reducir riesgos.</li>
+<li>Diagnosticar errores de permisos y optimizar configuraciones de seguridad.</li>
+</ul>
+<hr />
+<h2 id="componentes-principales-de-iam">Componentes principales de IAM</h2>
+<p>Google Cloud aplica IAM en una jerarquía: organización → carpeta → proyecto → recurso.</p>
+<p>A continuación, los elementos clave del sistema:</p>
+<h3 id="1-principals-identidades">1. Principals (Identidades)</h3>
+<ul>
+<li>Representan a quien accede a los recursos.</li>
+<li>Pueden ser: usuarios (<code>user:</code>), grupos (<code>group:</code>), cuentas de servicio (<code>serviceAccount:</code>) o dominios.</li>
+</ul>
+<h3 id="2-roles">2. Roles</h3>
+<ul>
+<li>Definen un conjunto de permisos.</li>
+<li>Tipos:</li>
+<li><strong>Básicos</strong>: Owner, Editor, Viewer.</li>
+<li><strong>Predefinidos</strong>: roles específicos por servicio (ej. <code>roles/storage.objectViewer</code>).</li>
+<li><strong>Personalizados</strong>: creados por el usuario.</li>
+</ul>
+<h3 id="3-permisos">3. Permisos</h3>
+<ul>
+<li>Son acciones sobre recursos, como:</li>
+<li><code>storage.buckets.get</code></li>
+<li><code>bigquery.datasets.create</code></li>
+</ul>
+<h3 id="4-politicas">4. Políticas</h3>
+<ul>
+<li>Asocian uno o más roles a uno o más principals.</li>
+<li>Se aplican a un recurso específico (proyecto, bucket, dataset, etc.).</li>
+</ul>
+<hr />
+<h2 id="diagrama-logico-de-iam-en-gcp">Diagrama lógico de IAM en GCP</h2>
+<div class="highlight"><pre><span></span><code>Organización
+ └── Carpeta (opcional)
+      └── Proyecto
+           └── Recurso (bucket, modelo, tabla...)
+</code></pre></div>
+<p>Las políticas se heredan hacia abajo. Si das un rol a nivel de proyecto, todos los recursos dentro de ese proyecto lo heredarán.</p>
+<hr />
+<h2 id="ejemplo-practico">Ejemplo práctico</h2>
+<p>Otorgar permisos de lectura a un bucket de Storage para un usuario:</p>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>projects<span class="w"> </span>add-iam-policy-binding<span class="w"> </span>mi-proyecto-id<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--member<span class="o">=</span><span class="s2">&quot;user:persona@ejemplo.com&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--role<span class="o">=</span><span class="s2">&quot;roles/storage.objectViewer&quot;</span>
+</code></pre></div>
+<p>Este comando:
+- Añade una política de IAM al proyecto.
+- Aplica el rol de visualizador de objetos de Storage.
+- Asocia ese rol al usuario especificado.</p>
+<hr />
+<h2 id="iam-en-proyectos-de-ml">IAM en proyectos de ML</h2>
+<p>IAM se usa en cada etapa del ciclo de vida de Machine Learning:</p>
+<ul>
+<li>🔒 <strong>Acceso a datasets</strong> en Storage o BigQuery.</li>
+<li>🧠 <strong>Entrenamiento de modelos</strong> con Vertex AI (y cuentas de servicio dedicadas).</li>
+<li>🚀 <strong>Despliegue de modelos</strong> y control de endpoints.</li>
+<li>🤖 <strong>Automatización</strong> con Workflows, Cloud Functions, y pipelines de Vertex AI.</li>
+</ul>
+<hr />
+<h2 id="recomendaciones-clave">Recomendaciones clave</h2>
+<ul>
+<li>✅ Aplica el <strong>principio de menor privilegio</strong>.</li>
+<li>🔐 Usa <strong>cuentas de servicio separadas</strong> para pipelines y tareas automáticas.</li>
+<li>🧩 Prefiere roles predefinidos antes de crear personalizados.</li>
+<li>📊 Supervisa accesos con Cloud Audit Logs.</li>
+</ul>
+<hr />
+<h2 id="referencias-utiles">Referencias útiles</h2>
+<ul>
+<li><a href="https://cloud.google.com/iam/docs">Documentación oficial de IAM</a></li>
+<li><a href="https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding">Comando <code>gcloud</code> para IAM</a></li>
+<li><a href="https://cloud.google.com/vertex-ai/docs/general/access-control">IAM para Vertex AI</a></li>
+</ul>
+<hr />
+<h2 id="conclusion">Conclusión</h2>
+<p>IAM es el primer paso para construir soluciones seguras y escalables en GCP. Con una buena gestión de accesos, no solo proteges tus datos y modelos, sino que también simplificas la automatización y el trabajo colaborativo.</p>
+<p>En el siguiente capítulo exploraremos cómo funcionan los <strong>roles y políticas</strong> para asignar permisos de forma granular.</p><style type="text/css">.quiz {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+/* Set margin-top of first quiz child */
+.quiz > *:first-child {
+  margin-top: 0;
+}
+.hidden {
+  display: none;
+}
+
+form button {
+  background-color: var(--md-primary-fg-color);
+  border: none;
+  color: var(--md-primary-bg-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.wrong label {
+  color: red;
+}
+.correct label {
+  color: green;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+fieldset input {
+  margin: 0 10px;
+}
+fieldset label {
+  margin: 0 10px;
+}
+
+label.correct {
+  color: green;
+}
+label.wrong {
+  color: red;
+}
+input[type='radio'].correct {
+  accent-color: green;
+}
+input[type='radio'].wrong {
+  accent-color: red;
+}
+.content {
+  margin: 10px;
+}
+</style><script type="text/javascript" defer>document.querySelectorAll('.quiz').forEach((quiz) => {
+  let form = quiz.querySelector('form');
+  let fieldset = form.querySelector('fieldset');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    let selectedAnswers = form.querySelectorAll('input[name="answer"]:checked');
+    let correctAnswers = fieldset.querySelectorAll(
+      'input[name="answer"][correct]'
+    );
+    // Check if all correct answers are selected
+    let is_correct = selectedAnswers.length === correctAnswers.length;
+    for (let i = 0; i < selectedAnswers.length; i++) {
+      if (!selectedAnswers[i].hasAttribute('correct')) {
+        is_correct = false;
+        break;
+      }
+    }
+    let section = quiz.querySelector('section');
+    if (is_correct) {
+      section.classList.remove('hidden');
+      resetFieldset(fieldset);
+      // Mark all fields with colors
+      const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
+      for (let i = 0; i < allAnswers.length; i++) {
+        if (allAnswers[i].hasAttribute('correct')) {
+          allAnswers[i].parentElement.classList.add('correct');
+        } else {
+          allAnswers[i].parentElement.classList.add('wrong');
+        }
+      }
+    } else {
+      section.classList.add('hidden');
+      resetFieldset(fieldset);
+      // Mark wrong fields with colors
+      for (let i = 0; i < selectedAnswers.length; i++) {
+        if (!selectedAnswers[i].hasAttribute('correct')) {
+          selectedAnswers[i].parentElement.classList.add('wrong');
+        } else {
+          selectedAnswers[i].parentElement.classList.add('correct');
+        }
+      }
+    }
+  });
+});
+
+function resetFieldset(fieldset) {
+  const fieldsetChildren = fieldset.children;
+  for (let i = 0; i < fieldsetChildren.length; i++) {
+    fieldsetChildren[i].classList.remove('wrong');
+    fieldsetChildren[i].classList.remove('correct');
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -494,6 +1021,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 📘 Unidad 1: IAM y Seguridad">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                📘 Unidad 1: IAM y Seguridad
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../roles/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Roles y Políticas">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Roles y Políticas
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -588,12 +1153,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/fralfaro/gcp_mle/", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "/fralfaro/gcp_mle/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="/fralfaro/gcp_mle/assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="/fralfaro/gcp_mle/javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
